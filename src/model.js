@@ -5,12 +5,17 @@ import {
   TextBlock,
   TextColumnsBlock,
 } from "./classes/blocks";
+import { css } from "./utils";
 
 export const model = [
   new TitleBlock("Javascript site contsructor", {
     tag: "h1",
-    styles:
-      "background:lightgray; color: black; text-align:center; background: linear-gradient(to right, white, grey)",
+    styles: css({
+      background: "lightgray",
+      color: "blue",
+      "text-align": "center",
+      background: "linear-gradient(to right, white, grey)",
+    }),
   }),
 
   new ImageBlock(image, {
