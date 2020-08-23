@@ -11,4 +11,5 @@ const updateCallback = (newBlock) => {
 };
 
 new Sidebar("#panel", updateCallback);
+
 site.render(model);

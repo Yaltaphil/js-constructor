@@ -24,8 +24,8 @@ export class Sidebar {
     const styles = event.target.styles.value;
 
     const Constructor = type === "text" ? TextBlock : TitleBlock;
-
     const newBlock = new Constructor(value, { styles });
+
     this.update(newBlock);
 
     event.target.value.value = "";
@@ -35,16 +35,16 @@ export class Sidebar {
 
 function block(type) {
   return `
-     <form name="${type}">
-     <h5>${type}</h5>
-     <div class="form-group">
-      <input class="form-control form-control-sm" name="value" placeholder="value">
+    <form name="${type}">
+      <h5>${type}</h5>
+      <div class="form-group">
+        <input class="form-control form-control-sm" name="value" placeholder="value">
       </div>
       <div class="form-group">
-      <input class="form-control form-control-sm" name="styles" placeholder="styles">
+        <input class="form-control form-control-sm" name="styles" placeholder="styles">
       </div>
       <button type="submit"  class="btn btn-primary btn-sm">Создать</button>
-      </form>
-      <hr />
+    </form>
+    <hr />
     `;
 }
