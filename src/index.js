@@ -11,5 +11,5 @@ const updateCallback = (newBlock) => {
 };
 
 new Sidebar("#panel", updateCallback);
-
+console.dir("A problem:", model);
 site.render(model);

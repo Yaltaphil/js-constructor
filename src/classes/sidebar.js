@@ -3,7 +3,7 @@ import { TextBlock, TitleBlock } from "./blocks";
 export class Sidebar {
   constructor(selector, update) {
     this.$el = document.querySelector(selector);
-    this.update = update;
+     this.update = update;
 
     this.init();
   }
