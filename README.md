@@ -1,3 +1,3 @@
-## Pure java-script site constructor
+## Pure javascript site constructor
 
     Simple site constructor on pure javascript. No dependencies.
